@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Card Payment</title>
+  <center>
+    <h2>CARD INFORMATION</h2>
+  </center>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/card.css">
+</head>
+
+<body>
+  <center>
+    <section class="body">
+      <form id="paymentForm" onsubmit="generateInvoice(event)">
+        <label for="cardName" class="colored-label">Card Holder Name</label>
+        <input type="text" id="cardName" class="colored-input" required>
+    
+        <label for="cardNumber" class="colored-label">Credit/Debit Card Number</label>
+        <input type="number" id="cardNumber" class="colored-input" required>
+    
+        <label for="expirationDate" class="colored-label">Expiration Date</label>
+        <input type="date" id="expirationDate" class="colored-input" required>
+    
+        <label for="cvv" class="colored-label">CVV Number</label>
+        <input type="text" id="cvv" class="colored-input" required>
+    
+        <label for="amount" class="colored-label">Amount</label>
+        <input type="number" id="amount" class="colored-input" required>
+    
+        <label for="email" class="colored-label">Email</label>
+        <input type="email" id="email" class="colored-input" required><br><br>
+    
+        <div class="button-container"><button type="submit">Submit</button></div>
+      </form>
+    </section>
+  </center>
+  <center>
+    <h2 id="invoice">TRANSACTION COMPLETED SUCCESSFULLY</h2>
+  </center>
+  <center>
+    <div id="invoice"></div>
+  </center>
+  <script src="./assets/js/card.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+    background-image: url(../image/bg-upi-payment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.body{
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    width: 40%;
+    padding: 25px 0px;
+    opacity: 80%;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border-color: #111111;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+button[type="submit"] {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+#invoice {
+    background-color: #fefefe;
+    border-radius: 70px 5px;
+    display: none;
+    max-width: 500px;
+    color: #111111;
+    margin: 60px auto;
+    padding: 20px;
+    animation: fadeIn 5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#invoice h2{
+    color: #111111;
+    font-size: 2rem;
+}
+
+#invoice p{
+    color: #111111;
+    font-size: 1.5rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.colored-label {
+    padding: 5px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.colored-input {
+    background-color: #999999;
+    padding: 5px;
+}
